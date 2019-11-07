@@ -8,9 +8,9 @@ class SessionController {
     const schema = Yup.object().shape({
       email: Yup.string()
         .email()
-        .requerid(),
+        .required(),
       password: Yup.string()
-        .requerid()
+        .required()
         .min(6),
     });
 
